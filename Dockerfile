@@ -5,7 +5,7 @@ FROM dclong/rust
 RUN rustup component add rust-src rustfmt clippy
 RUN RUSTFLAGS="-C strip=symbols" cargo install --locked \
         sccache cargo-binstall \
-    && cargo-binstall -y \
+    && cargo-binstall -y --locked \
         cargo-cache cargo-edit cargo-criterion \
         zellij \
         ripgrep rm-improved bat du-dust \
