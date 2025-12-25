@@ -8,7 +8,7 @@ RUN RUSTFLAGS="-C strip=symbols" cargo install --locked \
     && cargo-binstall -y --locked \
         cargo-cache cargo-edit cargo-criterion \
         zellij \
-        ripgrep rm-improved bat du-dust \
+        ripgrep rip2 bat du-dust \
         gitui git-delta git-leave gitql \
         stork-search
 
